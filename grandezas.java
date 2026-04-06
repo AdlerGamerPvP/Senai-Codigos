@@ -5,6 +5,8 @@ public class grandezas
 	public static void main(String[] args) {
 	    var sc = new Scanner(System.in);
 	    
+	    try {
+	    
 	    System.out.println("******************************");
 	    System.out.println("CÁLCULO DE GRANDEZAS ELÉTRICAS");
 	    System.out.println("******************************");
@@ -16,6 +18,11 @@ public class grandezas
         System.out.println("Qual grandeza deseja calcular?");
         
         int esc = sc.nextInt();
+        
+        // 👉 validação da opção
+        if (esc < 1 || esc > 4) {
+            throw new IllegalArgumentException();
+        }
         
     if (esc == 1){
          System.out.println("Informe o valor da Resistência (em Ohm): ");
@@ -45,6 +52,11 @@ public class grandezas
         if (esc == 4) {
             System.out.print("Até a próxima!");
         }
+        
+        } catch (IllegalArgumentException e) {
+            System.out.println("Opção inválida! Escolha entre 1 e 4.");
+        }
+        
         sc.close();
 	}
 }
