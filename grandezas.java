@@ -19,7 +19,6 @@ public class grandezas
         
         int esc = sc.nextInt();
         
-        // 👉 validação da opção
         if (esc < 1 || esc > 4) {
             throw new IllegalArgumentException();
         }
