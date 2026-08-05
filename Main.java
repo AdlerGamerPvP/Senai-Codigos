@@ -1,35 +1,15 @@
-import java.util.Scanner;
+import static java.lang.IO.*;
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner amongus = new Scanner(System.in);
+void main() {
+   Carro carro1 = new Carro("Vermelho", "Skyline", 2026, "Nissan", "74HBV75G");
+   Moto moto1 = new Moto("Azul", "PCX160", 2026, "Honda");
+   Caminhao caminhao1 = new Caminhao("Verde", "FH",5000,"Volvo");
+   Bicicleta bicicleta1 = new Bicicleta("Aro 29", 2026, "Montano");
 
-        System.out.println("Digite seu nome: ");
-        String nome = amongus.nextLine();
+   println(carro1);
+   println(moto1);
+   println(caminhao1);
+   println(bicicleta1);
 
-        System.out.println("Digite a nota da SA1: ");
-        float nota_um = amongus.nextFloat();
-
-        System.out.println("Digite a nota da SA2: ");
-        float nota_dois = amongus.nextFloat();
-
-//       what is this faggot saying
-
-        float media = ((nota_um + nota_dois) / 2);
-
-        String resultado;
-
-        if (media >= 4) {
-            resultado = "voce falhou tá de recuperação xddddddddddddd";
-        } else if (media >= 6) {
-            resultado = "voce ganhou :D";
-        } else {
-            resultado = "voce reprovou seu burro xdddddddd";
-        }
-
-        System.out.println("Nome: " + nome + " Nota 1: " + nota_um + " Nota 2: " + nota_dois + " Media:" + media);
-        System.out.println("Seu resultado é: " + resultado);
-
-    }
 
 }
