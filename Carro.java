@@ -12,6 +12,11 @@ public class Carro {
         this.marca = marca;
         this.chassisID = chassisID;
     }
+    public Carro(String marca, String modelo, int ano){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+    }
 
     @Override
     public String toString() {

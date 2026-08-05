@@ -10,6 +10,13 @@ public class Caminhao {
         this.pesomax = pesomax;
         this.marca = marca;
     }
+    public Caminhao(String marca, String modelo, int pesomax) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.pesomax = pesomax;
+    }
+
+
 
     @Override
     public String toString() {

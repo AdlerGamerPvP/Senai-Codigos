@@ -8,6 +8,11 @@ public class Bicicleta {
         this.ano = ano;
         this.fabricante = fabricante;
     }
+    public Bicicleta(String fabricante, String modelo){
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+
+    }
 
     @Override
     public String toString() {
